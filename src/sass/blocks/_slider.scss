@@ -1,9 +1,6 @@
 .main__slider{
     display: flex;
     justify-content: center;
-
-    margin-bottom: 236px;
-
     &__item{
         display: flex;
         flex-direction: row;
@@ -34,6 +31,7 @@
                 line-height: 28px;
                 width: 406px;
                 margin-bottom: 48px;
+                font-weight: normal;
             }
         }
 
@@ -53,4 +51,9 @@
             }
         }
     }
+}
+
+.simple-slider{
+    height: 600px;
+    margin-bottom: 236px;
 }

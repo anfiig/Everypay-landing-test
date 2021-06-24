@@ -1,0 +1,32 @@
+.information{
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__img{
+        margin-right: 114px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+
+        &__title{
+            font-size: 28px;
+            line-height: 36px;
+            color: rgba(45, 50, 56, 1);
+            font-weight: 700;
+            margin-bottom: 24px;
+
+            width: 534px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            line-height: 28px;
+            color: #2D3238;
+
+            width: 530px;
+        }
+    }
+}

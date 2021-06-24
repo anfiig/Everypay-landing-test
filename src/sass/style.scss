@@ -52,5 +52,11 @@
     }
 }
 
+.container{
+    width: 1098px;
+    margin: 0 auto;
+}
+
 @import 'blocks/header';
 @import 'blocks/slider';
+@import 'blocks/information';

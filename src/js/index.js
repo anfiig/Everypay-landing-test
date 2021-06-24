@@ -36,3 +36,5 @@ if (langBtns.length > 0){
     eventForEn();
     eventForRu();
 }
+
+//____________________________________________

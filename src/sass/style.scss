@@ -7,4 +7,50 @@
     transition: 0.3s;
 }
 
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    &__input{
+        width: 440px;
+        height: 48px;
+        border: 0;
+        border-radius: 44px;
+        background: #F3F9FF;
+
+        padding-left: 22px;
+
+        &::placeholder{
+            font-size: 16px;
+            line-height: 24;
+            color: #1792C7;
+        }
+
+        z-index: 0;
+    }
+    &__submit{
+        position: absolute;
+        right: 0;
+
+        width: 161px;
+        height: 48px;
+        border: 0;
+        border-radius: 44px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+
+        background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+
+        z-index: 1;
+    }
+}
+
 @import 'blocks/header';
+@import 'blocks/slider';

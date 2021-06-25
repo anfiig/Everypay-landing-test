@@ -1,0 +1,31 @@
+.tariffs{
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__descr{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        width: 564px;
+
+        margin-right: 47px;
+        &__title{
+            margin-bottom: 28px;
+        }
+
+        &__text{
+            font-size: 24px;
+            line-height: 34px;
+            color: #2D3238;
+            letter-spacing: 0.713846px;          
+            
+            margin-bottom: 40px;
+        }
+    }
+
+    margin-bottom: 160px;
+}

@@ -1,0 +1,125 @@
+.cases{
+    &__title{
+        margin-bottom: 85px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__item{
+            width: 346px;
+            height: 297px;
+            border: 1px solid rgba(56, 152, 254, 0.187528);
+            padding-left: 24px;
+            padding-top: 33px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            &__icons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                // margin-bottom: 111px;
+
+                &__img{
+                    transform: scale();
+                    &:nth-child(1), &:nth-child(2){
+                        margin-right: 12px;
+                    }
+                }
+            }
+
+            &__title{
+                color: #2D3238;
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 19px;
+                font-weight: 700;
+                letter-spacing: 0.44px;
+            }
+
+            &__link{
+                position: relative;
+                font-size: 16px;
+                line-height: 22px;
+                color: #1792C7;
+                font-weight: 700;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: -20px;
+                    transform: translate(0, -50%);
+
+                    width: 17px;
+                    height: 16px;
+                    background: url('../icons/arrow.svg');
+                    // background: #000;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: #1792C7;
+            }
+
+            &:hover{
+                background: #F3F9FF;
+                border-bottom: 3px solid #1792C7;
+            }
+
+            &:nth-child(1), &:nth-child(2){
+                margin-right: 30px;
+            }
+            &:nth-child(1){
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 111px;
+                            }
+                            &__title{
+                                width: 286px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 84px;
+                            }
+                            &__title{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 81px;
+                            }
+                            &__title{
+                                width: 302px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    margin-bottom: 160px;
+}

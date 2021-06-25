@@ -1,0 +1,42 @@
+.how{
+    &__title{
+        margin-bottom: 90px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__img{
+                margin-bottom: 39px;
+            }
+
+            &__text{
+                font-size: 18px;
+                line-height: 28px;
+                color: #2D3238;
+                text-align: center;
+
+                &:nth-child(1){
+                    width: 222px;
+                }
+                &:nth-child(2){
+                    width: 267px;
+                }
+                &:nth-child(3){
+                    width: 290px;
+                }
+            }
+            &:nth-child(1), &:nth-child(2){
+                margin-right: 31px;
+            }
+        }
+    }
+    margin-bottom: 140px;
+}

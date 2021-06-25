@@ -38,3 +38,22 @@ if (langBtns.length > 0){
 }
 
 //____________________________________________
+
+const forms = document.querySelectorAll('.form');
+
+function eventForForm(form){
+  form.querySelector('.form__input').value = '';
+  form.querySelector('.form__input').setAttribute('disabled', 'disabled');
+  form.classList.add('form_done');
+}
+
+for(let i=0; i<forms.length; i++){
+  forms[i].addEventListener('submit', function(e){
+    e.preventDefault();
+    eventForForm(forms[i]);
+  });
+}
+
+// $( "a" ).click(function( event ) {
+//   event.preventDefault();
+// });

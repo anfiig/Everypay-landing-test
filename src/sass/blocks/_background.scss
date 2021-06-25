@@ -1,0 +1,29 @@
+.background{
+    &__img{
+        &__chekout{
+            &_1{
+                position: absolute;
+                top: 700px;
+                right: 282px;
+            }
+            &_2{
+                position: absolute;
+                top: 2782px;
+                right: 54px;
+            }
+            &_3{
+                position: absolute;
+                transform: rotate(90deg);
+                top: 2500px;
+                left: -600px;
+            }
+        }
+        &__grid{
+            &_1{
+                position: absolute;
+                top: 1128px;
+                left: -450px;
+            }
+        }
+    }
+}

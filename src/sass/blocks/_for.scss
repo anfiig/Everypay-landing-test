@@ -1,0 +1,44 @@
+.for{
+    &__title{
+        margin-bottom: 90px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__img{
+                margin-bottom: 37px;
+            }
+
+            &__title{
+                font-weight: 700;
+                font-size: 22px;
+                color: #2D3238;
+                margin-bottom: 13px;
+            }
+            &__descr{
+                color: #2D3238;
+                font-size: 18px;
+                line-height: 28px;
+                width: 240px;
+            }
+
+            &:nth-child(1){
+                margin-right: 149px;
+            }
+            &:nth-child(2){
+                margin-right: 149px;
+                &__descr{
+                    width: 215px;
+                }
+            }
+        }
+    }
+}

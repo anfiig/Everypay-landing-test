@@ -11,19 +11,21 @@
 </head>
 <body>
     <header class="header">
-        <img src="icons/logo.svg" alt="logotype" class="header__logo">
-        <ul class="header__nav">
-            <li class="header__nav__item"><a href="#how">Как это работает?</a></li>
-            <li class="header__nav__item"><a href="#for">Для кого</a></li>
-            <li class="header__nav__item"><a href="#cases">Кейсы</a></li>
-            <li class="header__nav__item"><a href="#tariffs">Тарифы</a></li>
-            <li class="header__nav__item"><a href="#security">Безопасность</a></li>
-        </ul>
-        <div class="header__language">
-            <button class="header__language__btn header__language__ru header__language__btn_active">RU</button>
-            <button class="header__language__btn header__language__en">EN</button>
+        <div class="container">
+            <img src="icons/logo.svg" alt="logotype" class="header__logo">
+            <ul class="header__nav">
+                <li class="header__nav__item"><a href="#how">Как это работает?</a></li>
+                <li class="header__nav__item"><a href="#for">Для кого</a></li>
+                <li class="header__nav__item"><a href="#cases">Кейсы</a></li>
+                <li class="header__nav__item"><a href="#tariffs">Тарифы</a></li>
+                <li class="header__nav__item"><a href="#security">Безопасность</a></li>
+            </ul>
+            <div class="header__language">
+                <button class="header__language__btn header__language__ru header__language__btn_active">RU</button>
+                <button class="header__language__btn header__language__en">EN</button>
+            </div>
+            <button class="header__btn">Подключиться</button>
         </div>
-        <button class="header__btn">Подключиться</button>
     </header>
 
     <main class="main">
@@ -91,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-pagination"></div>
+            <!-- <div class="slider-pagination"></div> -->
         </article>
 
         <article class="information">
@@ -184,26 +186,32 @@
                 <div class="for__wrapper">
                     <div class="for__wrapper__item">
                         <img src="img/money-tree.svg" alt="icon" class="for__wrapper__item__img">
-                        <div class="for__wrapper__item__title">Малый бизнес</div>
-                        <div class="for__wrapper__item__descr">Скорость получения информации о платежах 
+                        <div class="for__wrapper__item__text">
+                            <div class="for__wrapper__item__title">Малый бизнес</div>
+                            <div class="for__wrapper__item__descr">Скорость получения информации о платежах 
                             и минимизация издержек</div>
+                        </div>
                     </div>
                     <div class="for__wrapper__item">
                         <img src="img/unicorn.svg" alt="icon" class="for__wrapper__item__img">
-                        <div class="for__wrapper__item__title">Стартапы</div>
-                        <div class="for__wrapper__item__descr">Автоматизация бизнес-процессов 
+                        <div class="for__wrapper__item__text">
+                            <div class="for__wrapper__item__title">Стартапы</div>
+                            <div class="for__wrapper__item__descr">Автоматизация бизнес-процессов 
                             и бухгалтерской рутины</div>
+                        </div>
                     </div>
                     <div class="for__wrapper__item">
                         <img src="img/lamp.svg" alt="icon" class="for__wrapper__item__img">
-                        <div class="for__wrapper__item__title">Разработчики</div>
-                        <div class="for__wrapper__item__descr">Быстрое внедрение своих приложений для малого бизнеса и стартапов</div>
+                        <div class="for__wrapper__item__text">
+                            <div class="for__wrapper__item__title">Разработчики</div>
+                            <div class="for__wrapper__item__descr">Быстрое внедрение своих приложений для малого бизнеса и стартапов</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
 
-        <article class="cases" id="cases">
+        <!-- <article class="cases" id="cases">
             <div class="container">
                 <h2 class="h2-title cases__title">Кейсы</h2>
                 <div class="cases__wrapper">
@@ -239,23 +247,73 @@
                     </div>
                 </div>
             </div>
+        </article> -->
+
+        <article class="cases" id="cases">
+            <div class="container">
+                <h2 class="h2-title cases__title">Кейсы</h2>
+                
+                <div class="simple-slider simple-slider-second">
+                    <div class="slider-wrapper">
+                        <div class="slider-slide">
+                            <div class="cases__wrapper__item">
+                                <div class="cases__wrapper__item__icons">
+                                    <img src="icons/bitrix24.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/check.svg" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/telegram-mini.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                </div>
+                                <div class="cases__wrapper__item__title">Автоматизация диджитал-агентства</div>
+                                <a href='' class="cases__wrapper__item__link">Читать кейс</a>
+                            </div>
+                        </div>
+                        <div class="slider-slide">
+                            <div class="cases__wrapper__item">
+                                <div class="cases__wrapper__item__icons">
+                                    <img src="icons/bitrix24.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/check.svg" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/point.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                </div>
+                                <div class="cases__wrapper__item__title">Приём платежей 
+                                    в рекламной медиа-группе</div>
+                                <a href='' class="cases__wrapper__item__link">Читать кейс</a>
+                            </div>
+                        </div>
+                        <div class="slider-slide">
+                            <div class="cases__wrapper__item">
+                                <div class="cases__wrapper__item__icons">
+                                    <img src="icons/bitrix24.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/check.svg" alt="icon" class="cases__wrapper__item__icons__img">
+                                    <img src="icons/point.png" alt="icon" class="cases__wrapper__item__icons__img">
+                                </div>
+                                <div class="cases__wrapper__item__title">Оптимизация бухгалтерии 
+                                    в производственной
+                                    компании</div>
+                                <a href='' class="cases__wrapper__item__link">Читать кейс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-pagination"></div>
+                </div>
+            </div>
         </article>
 
         <article class="tariffs" id="tariffs">
             <div class="container">
-                <div class="tariffs__descr">
-                    <h2 class="h2-title tariffs__descr__title">Тарифы</h2>
-                    <div class="tariffs__descr__text">Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса. 
-
-                        Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам 
-                        и мы с вами свяжемся.
-                        </div>
-                    <form enctype="text/plain" class="form tariff__descrs__form">
-                        <input type="email" class="form__input" placeholder="Введите email" required>
-                        <input type="submit" class="form__submit" value="Узнать">
-                    </form>
+                <h2 class="h2-title tariffs__descr__title">Тарифы</h2>
+                <div class="tariffs__item">
+                    <div class="tariffs__descr">
+                        <div class="tariffs__descr__text">Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса. 
+                            <br><br>
+                            Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам 
+                            и мы с вами свяжемся.
+                            </div>
+                    </div>
+                    <img src="img/ruble.svg" alt="image" class="tariffs__img"></img>
                 </div>
-                <img src="img/ruble.svg" alt="image" class="tariffs__img"></img>
+                <form enctype="text/plain" class="form tariffs__descr__form">
+                    <input type="email" class="form__input" placeholder="Введите email" required>
+                    <input type="submit" class="form__submit" value="Узнать">
+                </form>
             </div>
         </article>
 
@@ -291,9 +349,9 @@
 
         <article class="security" id="security">
             <div class="container">
+                <h2 class="h2-title security__title">Безопасность</h2>
                 <img src="img/security.svg" alt="image" class="security__img"></img>
                 <div class="security__descr">
-                    <h2 class="h2-title security__title">Безопасность</h2>
                     <div class="security__descr__text">Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только для получения выписок», а хранение информации в системе защищено и деперсонализировано.</div>
                 </div>
             </div>
@@ -312,8 +370,8 @@
             <div class="footer_email">
                 <h2 class="h2-title footer__title">Подключиться</h2>
                 <div class="footer__email__descr">Хотите начать пользоваться системой? Напишите нам.</div>
-                <span class="footer__email__subtitle">email</span>
-                <span class="footer__email link">hello@everypay.io</span>
+                <div class="footer__email__subtitle">email</div>
+                <div class="footer__email__link">hello@everypay.io</div>
             </div>
             <form class="footer__form">
                 <input type="text" class="footer__form__name" placeholder="Ваше имя*" required>
@@ -343,6 +401,21 @@
             enableDrag: false,
             class: {wrapper: 'slider-wrapper'},
         });
+
+        function eventForResize(){
+            if (window.screen.width <= 768){
+                // console.log('d');
+                new SimpleSlider('.simple-slider-second', {
+                enableDrag: true,
+                slidesPerView: 2,
+                class: {wrapper: 'slider-wrapper'},
+            });
+            }
+        }
+
+        window.addEventListener('resize', eventForResize());
+
+        eventForResize();
     </script>      
 </body>
 </html>

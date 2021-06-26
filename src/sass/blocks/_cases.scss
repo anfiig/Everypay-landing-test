@@ -2,12 +2,73 @@
     &__title{
         margin-bottom: 85px;
     }
-    &__wrapper{
+
+    .slider-wrapper{
         display: flex;
         flex-direction: row;
         align-items: center;
+        height: 297px;
 
+        .slider-slide{
+            height: 297px;
+            .cases__wrapper__item{
+                margin-right: 30px;
+            }
+            &:nth-child(1){
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 185px;
+                            }
+                            &__title{
+                                width: 286px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 190px;
+                            }
+                            &__title{
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                margin-right: 0;
+                .cases{
+                    &__wrapper{
+                        &__item{
+                            &__icons{
+                                margin-bottom: 190px;
+                            }
+                            &__title{
+                                width: 302px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .simple-slider{
+        height: 297px;
+        margin-bottom: 0;
+    }
+
+    &__wrapper{
         &__item{
+            position: relative;
+
             width: 346px;
             height: 297px;
             border: 1px solid rgba(56, 152, 254, 0.187528);
@@ -17,6 +78,7 @@
             display: flex;
             flex-direction: column;
             align-items: start;
+
 
             &__icons{
                 display: flex;
@@ -34,6 +96,10 @@
             }
 
             &__title{
+                position: absolute;
+                left: 24px;
+                bottom: 60px;
+
                 color: #2D3238;
                 font-size: 22px;
                 line-height: 30px;
@@ -71,52 +137,6 @@
             &:hover{
                 background: #F3F9FF;
                 border-bottom: 3px solid #1792C7;
-            }
-
-            &:nth-child(1), &:nth-child(2){
-                margin-right: 30px;
-            }
-            &:nth-child(1){
-                .cases{
-                    &__wrapper{
-                        &__item{
-                            &__icons{
-                                margin-bottom: 111px;
-                            }
-                            &__title{
-                                width: 286px;
-                            }
-                        }
-                    }
-                }
-            }
-            &:nth-child(2){
-                .cases{
-                    &__wrapper{
-                        &__item{
-                            &__icons{
-                                margin-bottom: 84px;
-                            }
-                            &__title{
-                                width: 200px;
-                            }
-                        }
-                    }
-                }
-            }
-            &:nth-child(3){
-                .cases{
-                    &__wrapper{
-                        &__item{
-                            &__icons{
-                                margin-bottom: 81px;
-                            }
-                            &__title{
-                                width: 302px;
-                            }
-                        }
-                    }
-                }
             }
         }
     }

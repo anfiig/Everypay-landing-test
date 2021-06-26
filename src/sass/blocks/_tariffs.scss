@@ -1,5 +1,11 @@
 .tariffs{
     .container{
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+    }
+
+    &__item{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -14,7 +20,7 @@
 
         margin-right: 47px;
         &__title{
-            margin-bottom: 28px;
+            margin-bottom: -46px;
         }
 
         &__text{
@@ -24,6 +30,11 @@
             letter-spacing: 0.713846px;          
             
             margin-bottom: 40px;
+        }
+
+        &__form{
+            width: 440px;
+            margin-top: -60px;
         }
     }
 

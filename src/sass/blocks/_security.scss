@@ -1,13 +1,9 @@
 .security{
     .container{
-        display: flex;
-        flex-direction: row;
-        align-items: start;
-        justify-content: center;
-    }
-
-    &__title{
-        margin-bottom: 28px;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: start;
+        // justify-content: center;
     }
 
     &__img{
@@ -27,5 +23,26 @@
             width: 534px;
         }
     }
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+        'img title'
+        'img descr'
+        ;
+    }
+
+    &__title{
+        grid-area: title;
+    }
+
+    &__img{
+        grid-area: img;
+    }
+
+    &__descr{
+        grid-area: descr;
+    }
+
     margin-bottom: 80px;
 }

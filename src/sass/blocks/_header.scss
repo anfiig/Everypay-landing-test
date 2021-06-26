@@ -4,12 +4,14 @@
     left: 50%;
     transform: translate(-50%, 0);
 
-    width: 1098px;
-    height: 48px;
+    // width: 1098px;
+    // height: 48px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
     &__logo{
         position: relative;

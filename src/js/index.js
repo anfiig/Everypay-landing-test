@@ -57,3 +57,17 @@ for(let i=0; i<forms.length; i++){
 // $( "a" ).click(function( event ) {
 //   event.preventDefault();
 // });
+
+//____________________________________________
+
+const mainForm = document.querySelector('.footer__form');
+
+function eventForMainForm(form){
+  form.classList.add('footer__form_passiv');
+  form.querySelector('.footer__form-done').classList.add('footer__form-done_active')
+}
+
+mainForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  eventForMainForm(mainForm);
+});

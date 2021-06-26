@@ -36,7 +36,7 @@
                                 <h2 class="main__slider__item__request__title h2-title">Не пропускайте важные оплаты</h2>
                                 <div class="main__slider__item__request__subtitle">Если от них зависят ваши проекты или старт рекламных кампаний</div>
                                 <form action="#" enctype="text/plain" class="form main__slider__item__request__form">
-                                    <input type="email" class="form__input" placeholder="Введите email">
+                                    <input type="email" class="form__input" placeholder="Введите email" required>
                                     <input type="submit" class="form__submit" value="Узнать">
                                 </form>
                             </div>
@@ -51,7 +51,7 @@
                             <h2 class="main__slider__item__request__title h2-title">Сократите издержки на бухгалтерию и коммуникации</h2>
                             <div class="main__slider__item__request__subtitle">Получайте информацию о платежах на счет компании там, где вам удобно</div>
                             <form action="#" enctype="text/plain" class="form main__slider__item__request__form">
-                                <input type="email" class="form__input" placeholder="Введите email">
+                                <input type="email" class="form__input" placeholder="Введите email" required>
                                 <input type="submit" class="form__submit" value="Узнать">
                             </form>
                         </div>
@@ -66,7 +66,7 @@
                                 <h2 class="main__slider__item__request__title h2-title">Создавайте собственные сценарии действий</h2>
                                 <div class="main__slider__item__request__subtitle">при поступлении денег на счет вашей компании</div>
                                 <form action="#" enctype="text/plain" class="form main__slider__item__request__form">
-                                    <input type="email" class="form__input" placeholder="Введите email">
+                                    <input type="email" class="form__input" placeholder="Введите email" required>
                                     <input type="submit" class="form__submit" value="Узнать">
                                 </form>
                             </div>
@@ -82,7 +82,7 @@
                                     на платежи так быстро, как они поступают 
                                     на ваш счет</h2>
                                 <form action="#" enctype="text/plain" class="form main__slider__item__request__form">
-                                    <input type="email" class="form__input" placeholder="Введите email">
+                                    <input type="email" class="form__input" placeholder="Введите email" required>
                                     <input type="submit" class="form__submit" value="Узнать">
                                 </form>
                             </div>
@@ -132,7 +132,7 @@
                     <div class="automation__item__request">
                         <div class="automation__item__request__descr">Подключайте привычные приложения, которые вы используете в работе.</div>
                         <form enctype="text/plain" class="automation__item__request__form form">
-                            <input type="email" class="form__input" placeholder="Введите email">
+                            <input type="email" class="form__input" placeholder="Введите email" required>
                             <input type="submit" class="form__submit" value="Узнать">
                         </form>
                     </div>
@@ -251,7 +251,7 @@
                         и мы с вами свяжемся.
                         </div>
                     <form enctype="text/plain" class="form tariff__descrs__form">
-                        <input type="email" class="form__input" placeholder="Введите email">
+                        <input type="email" class="form__input" placeholder="Введите email" required>
                         <input type="submit" class="form__submit" value="Узнать">
                     </form>
                 </div>
@@ -306,7 +306,32 @@
             <img src="icons/grid.svg" class="background__img__grid_1">
         </div>
     </main>
-      
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_email">
+                <h2 class="h2-title footer__title">Подключиться</h2>
+                <div class="footer__email__descr">Хотите начать пользоваться системой? Напишите нам.</div>
+                <span class="footer__email__subtitle">email</span>
+                <span class="footer__email link">hello@everypay.io</span>
+            </div>
+            <form class="footer__form">
+                <input type="text" class="footer__form__name" placeholder="Ваше имя*" required>
+                <input type="email" class="footer__form__email" placeholder="Email*" required>
+                <textarea type="text" class="footer__form__company" placeholder="Расскажите о своей компании*" required></textarea>
+                <input type="submit" class="footer__form__submit" value="Подключиться">
+                <div class="footer__form-done">
+                    Спасибо! <br> Мы приняли ваш запрос. <br> <br> В ближайшее время наш специалист поддержки свяжется с вами. 
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="footer__inf">
+                <div class="footer__inf__copyright">© 2020, Everypay</div>
+                <a href="" class="footer__inf__conf">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/index.js"></script>
     <script src="js/simpleSlider.min.js"></script>  

@@ -118,6 +118,10 @@
     line-height: 46px;
 }
 
+.header__burger__nav{
+    display: none;
+}
+
 @import 'blocks/header';
 @import 'blocks/slider';
 @import 'blocks/information';

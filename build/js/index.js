@@ -71,3 +71,27 @@ mainForm.addEventListener('submit', function(e){
   e.preventDefault();
   eventForMainForm(mainForm);
 });
+
+//____________________________________________
+
+let burgerBtn = document.querySelector('.header__burger');
+let burgerHeader = document.querySelector('.header');
+let burgerBlock = document.querySelector('.header__burger__nav');
+let burgerLinks = burgerBlock.querySelectorAll('.header__burger__nav__list__item');
+
+for (let i=0; i<burgerLinks.length; i++){
+  burgerLinks[i].addEventListener('click', function(){
+    burgerBtn.classList.remove('header__burger_active');
+    document.querySelector('body').classList.remove('stop-scrolling');
+    burgerHeader.classList.remove('header_active');
+    burgerBlock.classList.remove('header__burger__nav_active');
+  });
+}
+
+burgerBtn.addEventListener('click', function(){
+  burgerBtn.classList.toggle('header__burger_active');
+  burgerHeader.classList.toggle('header_active');
+  burgerBlock.classList.toggle('header__burger__nav_active');
+  document.querySelector('body').classList.toggle('stop-scrolling');
+  // document.querySelector('body').bind('touchmove', function(e){e.preventDefault()});
+});

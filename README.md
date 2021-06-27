@@ -9,7 +9,7 @@ Test landing page for summer internship at adikt
 3. gulp run-build - сборка без запуска локального сервера
 
 <br/><br/>
-[Сайт - anfiig.github.io/sites/Everypay/](https://anfiig.github.io/sites/everypay/)
+[Сайт - anfiig.github.io/sites/everypay/](https://anfiig.github.io/sites/everypay/)
 
 
 <h2>Использовал|Технологии:</h2>

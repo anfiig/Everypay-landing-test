@@ -1,5 +1,5 @@
 {
-  "name": "Sputnik",
+  "name": "Everypay",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreyFilippov-designed/project.git"
+    "url": "git+https://github.com/anfiig/Everypay-landing-test"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndreyFilippov-designed/project/issues"
+    "url": "https://github.com/anfiig/Everypay-landing-test/issues"
   },
-  "homepage": "https://github.com/AndreyFilippov-designed/project#readme",
+  "homepage": "https://github.com/anfiig/Everypay-landing-test#readme",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
